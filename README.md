@@ -16,7 +16,12 @@ Proyek ini adalah analisis spasial untuk memetakan potensi **Rainwater Harvestin
 4. Klik tombol **Source** (atau tekan `Ctrl+Shift+S`) di RStudio untuk menjalankan seluruh skrip.
 5. Skrip akan memproses data dan menyimpan hasilnya secara otomatis ke dalam folder `outputRWH/` berupa file `.png` (peta statis) dan `.html` (peta interaktif).
 
-## 4. Struktur Folder
+## 4. Peta Interaktif
+Selain peta statis, Anda juga dapat mengakses **Peta Interaktif** melalui browser untuk eksplorasi lebih mendalam (seperti *zoom* dan *identify* data):
+
+[👉 Klik di sini untuk membuka Peta Interaktif](https://rijaleffendi2002-maker.github.io/analisis-rwh-aceh-barat/outputRWH/peta_potensi_rwh_aceh_barat_interaktif.html)
+
+## 5. Struktur Folder
 ```text
 ├── analisis_pemanenan_air_hujan.R  # Skrip utama analisis
 ├── README.md                       # Dokumentasi proyek
