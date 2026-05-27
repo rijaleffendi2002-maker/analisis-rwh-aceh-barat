@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Peta Potensi RWH Aceh Barat</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css" rel="stylesheet" />
+    <style>
+        body { margin: 0; padding: 0; }
+        #htmlwidget-dc78e0252c6e5a6ba3af { width: 100vw; height: 100vh; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/htmlwidgets/1.6.4/htmlwidgets.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js"></script>
+</head>
+<body>
+
+<div id="htmlwidget-dc78e0252c6e5a6ba3af" class="leaflet html-widget" style="width:100vw;height:100vh;"></div>
+
+<script type="application/json" data-for="htmlwidget-dc78e0252c6e5a6ba3af">
+{
+  "x": {
+    "options": {
+      "crs": {"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},
+      "attributionControl": true
+    },
+    "calls": [
+      {"method":"addProviderTiles","args":["Esri.WorldGrayCanvas",null,null,{"opacity":1}]}
+    ]
+  }
+}
+</script>
+
+<script>
+  HTMLWidgets.addBinding({
+    name: "leaflet",
+    type: "output",
+    renderValue: function(el, x, instance) {
+      var map = L.map(el, x.options);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    }
+  });
+</script>
+
+</body>
+</html>
